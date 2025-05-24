@@ -3,6 +3,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
+console.log('Connecting to:', process.env.ATLAS_URI);
+
 
 const app = express();
 const port = process.env.PORT || 5000;
